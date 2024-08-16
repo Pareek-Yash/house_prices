@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  house-prices:
+    image: 'at/house-prices:latest'
+    build:
+      context: .
+    command: ''
+    tty: true

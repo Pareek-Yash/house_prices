@@ -1,0 +1,35 @@
+[tool.poetry]
+name = "house-prices"
+version = "0.1.0"
+description = "Predict the final prices of residential homes in Ames, Iowa, based on a dataset with 79 explanatory variables."
+authors = ["Yash Pareek <yashpareek.workmail@gmail.com>"]
+license = "proprietary"
+packages = [{ include = "house_prices", from = "src" }, ]
+include = ["src/house_prices/res/*"]
+
+
+[tool.poetry.dependencies]
+python = "^3.11"
+PyYAML = "^6.0"
+
+[tool.poetry.group.test.dependencies]
+pytest = "^7.0"
+pytest-cov = "^4.0"
+
+[tool.poetry.group.linter.dependencies]
+black = "^23.11"
+isort = "^5.12.0"
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.0"
+
+[tool.isort]
+profile = "black"
+
+[tool.pytest.ini_options]
+minversion = "7.0"
+testpaths = ["tests"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
