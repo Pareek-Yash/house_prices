@@ -11,6 +11,7 @@ include = ["src/house_prices/res/*"]
 [tool.poetry.dependencies]
 python = "^3.11"
 PyYAML = "^6.0"
+mesop = "^0.12.0"
 
 [tool.poetry.group.test.dependencies]
 pytest = "^7.0"

@@ -54,4 +54,4 @@ Yash Pareek (yashpareek.workmail@gmail.com)
 
 ## License
 
-© Yash Pareek
+MIT
