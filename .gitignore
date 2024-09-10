@@ -73,5 +73,9 @@ venv*/
 
 # project-specific stuff
 # exclude data from source control (but keep the folder)
+.dvc/*
+.dvcignore
 data/*
 !data/.gitkeep
+kaggle.json
+pylintrc
